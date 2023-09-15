@@ -60,7 +60,7 @@ def _load_target_model(
     name_or_path: str, vae_path: Optional[str], model_version: str, weight_dtype, device="cpu", model_dtype=None
 ):
     # model_dtype only work with full fp16/bf16
-    name_or_path = os.readlink(name_or_path) if os.path.islink(name_or_path) else name_or_path
+    # name_or_path = os.readlink(name_or_path) if os.path.islink(name_or_path) else name_or_path
     load_stable_diffusion_format = os.path.isfile(name_or_path)  # determine SD or Diffusers
 
     if load_stable_diffusion_format:
