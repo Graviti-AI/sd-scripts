@@ -27,6 +27,10 @@ fairscale==0.4.13
 # onnxruntime==1.16.0
 # this is for onnx: 
 # protobuf==3.20.3
+# for sampler LMSDiscreteScheduler
+scipy==1.11.3
+# for 8bit Adam
+bitsandbytes==0.41.1
 # open clip for SDXL
 open-clip-torch==2.20.0
 # for kohya_ss library
